@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>template3</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  
+    <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./images/8.jpg" width="70" height="40" alt="logo">
+        <span class=" mx-2">egypt</span>
+      </a>
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#" aria-current="page">Home
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle border border-primary shadow border-1 rounded" href="#" id="dropdownId" data-bs-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">trips
+            </a>
+            <div class="dropdown-menu text-uppercase" aria-labelledby="dropdownId">
+              <a class="dropdown-item" href="#">cairo</a>
+              <a class="dropdown-item" href="#">alex</a>
+              <hr class="my-0">
+              <a class="dropdown-item" href="#">luxor</a>
+              <a class="dropdown-item" href="#">aswan</a>
+              <a class="dropdown-item" href="#">sharm elshikh</a>
+              <a class="dropdown-item" href="#">elguna</a>
+              <a class="dropdown-item" href="#">more ...</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">about</a>
+          </li>
+        </ul>
+        <form class="d-flex my-2 my-lg-0">
+          <input class="form-control me-2" type="text" placeholder="Search" />
+          <button class="btn btn-outline-primary" type="submit">
+            Search
+          </button>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            login
+          </button>
+      
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">login</h1>
+                  <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="form-check form-switch ms-3">
+                      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                      <label class="form-check-label" for="flexSwitchCheckChecked">remmember me</label>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary me-auto" data-bs-dismiss="modal">login</button>
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    </nav>
+
+    <ul class="position-fixed gap-3 d-flex flex-column ul-icon">
+      <li>
+        <a class="" href="#"><i class="fa-brands fa-facebook fs-1 "></i></a>
+      </li>
+      <li>
+        <a class="" href="#"><i class="fa-brands fa-twitter fs-1 "></i></a>
+      </li>
+      <li>
+        <a class="" href="#"><i class="fa-brands fa-whatsapp fs-1 "></i></a>
+      </li>
+      <li>
+        <a class="" href="#"><i class="fa-brands fa-instagram fs-1 "></i></a>
+      </li>
+      <li>
+        <a class="" href="#"><i class="fa-brands fa-telegram fs-1 "></i></a>
+      </li>
+    </ul>
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/8.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption rounded d-md-block">
+            <h5>First slide label</h5>
+            <p class="text-white-50">Some representative placeholder content for the first slide.</p>
+            <button class="btn btn-primary">visit us</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption rounded d-md-block">
+            <h5>Second slide label</h5>
+            <p class="text-white-50">Some representative placeholder content for the first slide.</p>
+            <button class="btn btn-primary">visit us</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/5.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption rounded d-md-block">
+            <h5>Third slide label</h5>
+            <p class="text-white-50">Some representative placeholder content for the first slide.</p>
+            <button class="btn btn-primary">visit us</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="alert alert-info p-5" role="alert">
+      <h2>welcome</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro iure ad soluta voluptates,
+        aut sapiente eius numquam corrupti, ex aperiam labore repudiandae! Nihil, illum.
+      </p>
+      <button class="btn btn-light text-primary">learn more</button>
+    </div>
+    <hr>
+
+    <div class="alert alert-color p-5 shadow" role="alert">
+      <h2 class="text-center text-white">popular destinationsin egypt</h2>
+    </div>
+    <div class="accordion accordion shadow"  id=" accordionFlushExample">
+      <div class="accordion-item shadow mb-2 ">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed fw-bold text-primary" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Accordion Item #1
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body text-black-50">Placeholder content for this accordion, which is intended to demonstrate
+            the
+            <code>.accordion-flush</code> class. This is the first item's accordion body.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item shadow mb-2">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed fw-bold text-primary" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Accordion Item #2
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body text-black-50">Placeholder content for this accordion, which is intended to demonstrate
+            the
+            <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled
+            with some actual content.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item shadow mb-2">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed fw-bold text-primary" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Accordion Item #3
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body text-shadow text-black-50">Placeholder content for this accordion, which is intended to
+            demonstrate the
+            <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening
+            here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more
+            representative of how this would look in a real-world application.
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <div class="alert alert-color p-3 shadow" role="alert">
+      <h2 class="text-center text-white">translate from arabic to english</h2>
+    </div>
+    <div class="container-fluid alert alert-info shadow">
+      <div class="container py-4">
+        <h4 class="text-black-50">write and translate <span class="text-dark">press here</span></h4>
+        <button type="button"
+          class="btn modal-button my-3 text-light alert-color border-2 border-light text-capitalize position-relative"
+          data-bs-toggle="modal" data-bs-target="#exampleModalSm">copy
+          <span class="px-4 py-1 rounded-bottom position-absolute text-center span-1">copy</span>
+        </button>
+        <div class="modal fade" id="exampleModalSm" tabindex="-1" aria-labelledby="exampleModalSmLabel"
+          style="display: none;" aria-hidden="true">
+          <div class="modal-dialog modal-md">
+            <div class="modal-content">
+              <div class="modal-body">
+                <h4 class="modal-title fs-6 mb-3" id="exampleModalSmLabel"><a href="#">
+                    https://github.com/Omar-Els/template2</a>
+                </h4>
+                <div class="modal-p">
+                  <p class="modal-p text-black-50">تم نسخ النص.</p>
+                  <button class="btn btn-primary px-4" data-bs-dismiss="modal">ok</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <textarea class="form-control" placeholder="translate"></textarea>
+    
+      </div>
+    
+    </div>
+    <hr>
+
+    <div class="alert alert-color p-3 shadow" role="alert">
+      <h2 class="text-center text-white">translate from arabic to frensh</h2>
+    </div>
+    <div class="container-fluid alert alert-info shadow">
+      <div class="container py-4">
+        <h4 class="text-black-50">write and translate <span class="text-dark">press here</span></h4>
+        <button type="button"
+          class="btn modal-button my-3 text-light alert-color border-2 border-light text-capitalize position-relative"
+          data-bs-toggle="modal" data-bs-target="#exampleModalSm">copy
+          <span class="px-4 py-1 rounded-bottom position-absolute text-center span-1">copy</span>
+        </button>
+        <div class="modal fade" id="exampleModalSm" tabindex="-1" aria-labelledby="exampleModalSmLabel"
+          style="display: none;" aria-hidden="true">
+          <div class="modal-dialog modal-md">
+            <div class="modal-content">
+              <div class="modal-body">
+                <h4 class="modal-title fs-6 mb-3" id="exampleModalSmLabel"><a href="#">
+                    https://github.com/Omar-Els/template2</a>
+                </h4>
+                <div class="modal-p">
+                  <p class="modal-p text-black-50">تم نسخ النص.</p>
+                  <button class="btn btn-primary px-4" data-bs-dismiss="modal">ok</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <textarea class="form-control" placeholder="translate"></textarea>
+    
+      </div>
+    
+    </div>
+    <hr>
+
+    <div class="alert alert-color p-3 shadow" role="alert">
+      <h2 class="text-center text-white">translate from arabic to german</h2>
+    </div>
+    <div class="container-fluid alert alert-info shadow">
+      <div class="container py-4">
+        <h4 class="text-black-50">write and translate <span class="text-dark">press here</span></h4>
+        <button type="button"
+          class="btn modal-button my-3 text-light alert-color border-2 border-light text-capitalize position-relative"
+          data-bs-toggle="modal" data-bs-target="#exampleModalSm">copy
+          <span class="px-4 py-1 rounded-bottom position-absolute text-center span-1">copy</span>
+        </button>
+        <div class="modal fade" id="exampleModalSm" tabindex="-1" aria-labelledby="exampleModalSmLabel"
+          style="display: none;" aria-hidden="true">
+          <div class="modal-dialog modal-md">
+            <div class="modal-content">
+              <div class="modal-body">
+                <h4 class="modal-title fs-6 mb-3" id="exampleModalSmLabel"><a href="#">
+                    https://github.com/Omar-Els/template2</a>
+                </h4>
+                <div class="modal-p">
+                  <p class="modal-p text-black-50">تم نسخ النص.</p>
+                  <button class="btn btn-primary px-4" data-bs-dismiss="modal">ok</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <textarea class="form-control" placeholder="translate"></textarea>
+    
+      </div>
+    
+    </div>
+    <hr>
+
+    <div class="container-fluid background-img p-5 shadow">
+      <div class="my-5"></div>
+    </div>
+
+    <div class="alert alert-color p-3 shadow mb-5" role="alert">
+      <h2 class="text-center text-white text-uppercase">populer destinations in egypt</h2>
+    </div>
+
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-5">
+        <div class="col col-card shadow border border-light">
+          <div class="card h-100 bx-2 border border-0">
+            <img src="./images/8.jpg" class="card-img-top" alt="...">
+            <div class="card-body position-relative">
+              <h5 class="card-title">cairo</h5>
+              <div class="btn btn-outline-primary position-absolute z-2 end-0">know more</div>
+              <p class="card-text">capital of egypt</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-card shadow border border-light">
+          <div class="card h-100 bx-2 border border-0">
+            <img src="./images/8.jpg" class="card-img-top" alt="...">
+            <div class="card-body position-relative">
+              <h5 class="card-title">cairo</h5>
+              <div class="btn btn-outline-primary position-absolute z-2 end-0">know more</div>
+              <p class="card-text">capital of egypt</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-card shadow border border-light">
+          <div class="card h-100 bx-2 border border-0">
+            <img src="./images/8.jpg" class="card-img-top" alt="...">
+            <div class="card-body position-relative">
+              <h5 class="card-title">cairo</h5>
+              <div class="btn btn-outline-primary position-absolute z-2 end-0">know more</div>
+              <p class="card-text">capital of egypt</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-card shadow border border-light">
+          <div class="card h-100 bx-2 border border-0">
+            <img src="./images/8.jpg" class="card-img-top" alt="...">
+            <div class="card-body position-relative">
+              <h5 class="card-title">cairo</h5>
+              <div class="btn btn-outline-primary position-absolute z-2 end-0">know more</div>
+              <p class="card-text">capital of egypt</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-card shadow border border-light">
+          <div class="card h-100 bx-2 border border-0">
+            <img src="./images/8.jpg" class="card-img-top" alt="...">
+              <div class="card-body position-relative">
+                <h5 class="card-title">cairo</h5>
+                <div class="btn btn-outline-primary position-absolute z-2 end-0">know more</div>
+                <p class="card-text">capital of egypt</p>
+              </div>
+          </div>
+        </div>
+        <div class="col col-card shadow border border-light">
+          <div class="card h-100 bx-2 border border-0">
+            <img src="./images/8.jpg" class="card-img-top" alt="...">
+            <div class="card-body position-relative">
+              <h5 class="card-title">cairo</h5>
+              <div class="btn btn-outline-primary position-absolute z-2 end-0">know more</div>
+              <p class="card-text">capital of egypt</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-card shadow mx-auto border border-light">
+          <div class="card h-100 bx-2 border border-0">
+            <img src="./images/8.jpg" class="card-img-top" alt="...">
+            <div class="card-body position-relative">
+              <h5 class="card-title">cairo</h5>
+              <div class="btn btn-outline-primary position-absolute z-2 end-0">know more</div>
+              <p class="card-text">capital of egypt</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-card shadow mx-auto border border-light">
+          <div class="card h-100 bx-2 border border-0">
+            <img src="./images/8.jpg" class="card-img-top" alt="...">
+            <div class="card-body position-relative">
+              <h5 class="card-title">cairo</h5>
+              <div class="btn btn-outline-primary position-absolute z-2 end-0">know more</div>
+              <p class="card-text">capital of egypt</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid background-img1 p-5 shadow">
+      <div class="my-5"></div>
+    </div>
+    <hr class="my-3">
+
+    <div class="alert alert-color p-3 shadow mb-5" role="alert">
+      <h2 class="text-center text-white text-uppercase">thanks for</h2>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-5 col-lg-3 ul-ux card text-bg-dark px-0 m-auto mb-5 position-relative">
+          <img src="./images/13.jpg" alt="" class="img-fluid card-img opacity-50">
+          <div class="card-img-overlay ">
+            <p class="card-title position-absolute">all thanks and appreciation</p>
+            <p class="card-text position-absolute" style="top: 15%;"><i class="fa-regular fa-clock"></i><small> Last updated 3 mins ago</small></p>
+            <img src="./images/13.jpg" style="top: 40%;" class="position-absolute img-fluid rounded-circle" width="100" height="200" alt="">
+            <h5 class="card-text position-absolute" style="top: 77%;">eng. omar elsayed</h5>
+            <p class="card-text position-absolute" style="top: 85%;">director of UL/UX</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-5 col-lg-3 ul-ux card text-bg-dark px-0 m-auto mb-5 position-relative">
+          <img src="./images/13.jpg" alt="" class="img-fluid card-img opacity-50">
+          <div class="card-img-overlay ">
+            <p class="card-title position-absolute">all thanks and appreciation</p>
+            <p class="card-text position-absolute" style="top: 15%;"><i class="fa-regular fa-clock"></i><small> Last updated 3
+                mins ago</small></p>
+            <img src="./images/13.jpg" style="top: 40%;" class="position-absolute img-fluid rounded-circle" width="100"
+              height="200" alt="">
+            <h5 class="card-text position-absolute" style="top: 77%;">eng. omar elsayed</h5>
+            <p class="card-text position-absolute" style="top: 85%;">director of UL/UX</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-5 col-lg-3 ul-ux card text-bg-dark px-0 m-auto mb-5 position-relative">
+          <img src="./images/13.jpg" alt="" class="img-fluid card-img opacity-50">
+          <div class="card-img-overlay ">
+            <p class="card-title position-absolute">all thanks and appreciation</p>
+            <p class="card-text position-absolute" style="top: 15%;"><i class="fa-regular fa-clock"></i><small> Last updated 3
+                mins ago</small></p>
+            <img src="./images/13.jpg" style="top: 40%;" class="position-absolute img-fluid rounded-circle" width="100"
+              height="200" alt="">
+            <h5 class="card-text position-absolute" style="top: 77%;">eng. omar elsayed</h5>
+            <p class="card-text position-absolute" style="top: 85%;">director of UL/UX</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <div class="container-fluid pt-4">
+      
+      <h3 class="title-news text-uppercase text-primary text-center">egypt news</h3>
+      
+      <div class="container cont">
+       
+        <div class="media-1 med-1-3 row position-relative shadow my-5 py-3 rounded bg-light">
+          <div class="media-content col col-md-8 mx-auto">
+            <h5 class="mt-2 fs-3 mt-5">podcast title</h5>
+            <span class="fw-light position-relative"><i class="fa-solid fa-calendar-days fs-6"></i>Mon, May 25th 2024 
+              <span class="position-absolute span-line rounded" style="height:4px;bottom:-60%;left:0%;background: blue;"></span>
+            </span>
+            
+            <p class="mt-5">This is some placeholder content for the custom component. It is intended to mimic what some real-world content
+              would look like, and we're using it here to give the component a bit of body and size.
+            </p>
+
+              <button class="me-1 border-0 rounded" style="background-color: rgba(0, 0, 0, 0.443);"><i
+                  class="fa-solid fa-podcast fs-6"></i>podcast</button>
+              <button class="me-1 border-0 rounded" style="background-color: rgba(0, 0, 0, 0.443);"><i
+                  class="fa-solid fa-clock fs-6"></i>55 mins</button>
+              <button class="me-1 border-0 rounded" style="background-color: rgba(0, 0, 0, 0.443);"><i
+                  class="fa-solid fa-play fs-6 "></i>play episode</button>
+          </div>
+          <img src="./images/13.jpg" class="img-1-3 col col-lg-3 mt-2"   alt="...">
+
+        </div>
+      </div>
+      <div class="container cont">
+        <div class="row position-relative shadow my-5 py-3 rounded  bg-light">
+          <img src="./images/13.jpg" class="img-2-4 img-fluid col col-lg-3" height="200" width="150" alt="...">
+          <div class="col col-md-8">
+            <h5 class="mt-2 fs-3 mt-5">podcast title</h5>
+            <span class="fw-light position-relative"><i class="fa-solid fa-calendar-days fs-6"></i>Mon, May 25th 2024
+              <span class="position-absolute span-line rounded"
+                style="height:4px;bottom:-60%;left:0%;background: blue;"></span>
+            </span>
+            
+            <p class="mt-5">This is some placeholder content for the custom component. It is intended to mimic what some real-world content
+              would look like, and we're using it here to give the component a bit of body and size.
+            </p>
+
+              <button class="me-1 border-0 rounded" style="background-color: rgba(0, 0, 0, 0.443);"><i
+                  class="fa-solid fa-podcast fs-6"></i>podcast</button>
+              <button class="me-1 border-0 rounded" style="background-color: rgba(0, 0, 0, 0.443);"><i
+                  class="fa-solid fa-clock fs-6"></i>55 mins</button>
+              <button class="me-1 border-0 rounded" style="background-color: rgba(0, 0, 0, 0.443);"><i
+                  class="fa-solid fa-play fs-6 "></i>play episode</button>
+          </div>
+        </div>
+      </div>
+      <div class="container cont">
+      <div class="media-1 med-1-3 row position-relative shadow my-5 py-3 rounded bg-light">
+        <div class="media-content col col-md-8 mx-auto">
+          <h5 class="mt-2 fs-3 mt-5">podcast title</h5>
+            <span class="fw-light position-relative"><i class="fa-solid fa-calendar-days fs-6"></i>Mon, May 25th 2024
+              <span class="position-absolute span-line rounded"
+                style="height:4px;bottom:-60%;left:0%;background: blue;"></span>
+           </span>
+    
+          <p class="mt-5">This is some placeholder content for the custom component. It is intended to mimic what some
+            real-world content
+            would look like, and we're using it here to give the component a bit of body and size.
+          </p>
+    
+          <button class="me-1 border-0 rounded" style="background-color: rgba(0, 0, 0, 0.443);"><i
+              class="fa-solid fa-podcast fs-6"></i>podcast</button>
+          <button class="me-1 border-0 rounded" style="background-color: rgba(0, 0, 0, 0.443);"><i
+              class="fa-solid fa-clock fs-6"></i>55 mins</button>
+          <button class="me-1 border-0 rounded" style="background-color: rgba(0, 0, 0, 0.443);"><i
+              class="fa-solid fa-play fs-6 "></i>play episode</button>
+        </div>
+        <img src="./images/13.jpg" class="img-1-3 img-fluid col col-lg-3 mt-2" height="200" width="150" alt="...">
+      </div>
+      </div>
+      <div class="container cont">
+        <div class="row position-relative shadow my-5 py-3 rounded bg-light">
+          <img src="./images/13.jpg" class="img-2-4 img-fluid col col-lg-3" height="200" width="150" alt="...">
+          <div class="col col-md-8">
+            <h5 class="mt-2 fs-3 mt-5">podcast title</h5>
+            <span class="fw-light position-relative"><i class="fa-solid fa-calendar-days fs-6"></i>Mon, May 25th 2024
+              <span class="position-absolute span-line rounded"
+                style="height:4px;bottom:-60%;left:0%;background: blue;"></span>
+            </span>
+            
+            <p class="mt-5">This is some placeholder content for the custom component. It is intended to mimic what some real-world content
+              would look like, and we're using it here to give the component a bit of body and size.
+            </p>
+
+              <button class="me-1 border-0 rounded" style="background-color: rgba(0, 0, 0, 0.443);"><i class="fa-solid fa-podcast fs-6"></i>podcast</button>
+              <button class="me-1 border-0 rounded" style="background-color: rgba(0, 0, 0, 0.443);"><i class="fa-solid fa-clock fs-6"></i>55 mins</button>
+              <button class="me-1 border-0 rounded" style="background-color: rgba(0, 0, 0, 0.443);"><i class="fa-solid fa-play fs-6 "></i>play episode</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center">
+      <h4 class="text-uppercase mx-auto text-primary fw-bold">join us</h4>
+      <div class="row   py-4 text-primary">
+        <div class="col-lg-2 col-md-5 col-sm-11 shadow p-4 mx-auto rounded" style="background-color: rgba(0, 0, 0, 0.105);">
+          <h5 class="mb-3">subscribe now</h5>
+          <i class="fa-brands fa-facebook fs-1"></i>
+          <p>go to link</p>
+        </div>
+        <div class="col-lg-2 col-md-5 col-sm-11 shadow p-4 mx-auto rounded" style="background-color: rgba(0, 0, 0, 0.105);">
+          <h5 class="mb-3">subscribe now</h5>
+          <i class="fa-brands fa-whatsapp fs-1"></i>
+          <p>go to link</p>
+        </div>
+        <div class="col-lg-2 col-md-5 col-sm-11 shadow p-4 mx-auto rounded" style="background-color: rgba(0, 0, 0, 0.105);">
+          <h5 class="mb-3">subscribe now</h5>
+          <i class="fa-brands fa-instagram fs-1"></i>
+          <p>go to link</p>
+        </div>
+        <div class="col-lg-2 col-md-5 col-sm-11 shadow p-4 mx-auto rounded" style="background-color: rgba(0, 0, 0, 0.105);">
+          <h5 class="mb-3">subscribe now</h5>
+          <i class="fa-brands fa-linkedin fs-1"></i>
+          <p>go to link</p>
+        </div>
+      </div>
+    </div>
+     
+    <div class="container-fluid py-5 text-center text-white" style="background-color: rgb(158, 158, 252);">
+      <div class="row mx-auto">
+        <div class="col-lg-3 col-11 mx-auto">
+          <div class="py-3 mx-auto" style="border-top:1px solid white;border-bottom:1px solid white;">
+            <div class="footer-img">
+              <img src="./images/8.jpg" class="shadow rounded-circle" height="80" width="80" alt="">
+              <span>good company</span>
+            </div>
+          </div>
+          <ul class="py-4">
+            <li><a class="text-white-50" href="#">tel 000-000-000</a></li>
+            <li><a class="text-white-50" href="#">address : <span class="text-uppercase">egypt</span></a></li>
+            <li><a class="text-white-50" href="#">fax : 000-000-000</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-11 mx-auto">
+          <div class="py-3 mx-auto" style="border-top:1px solid white;border-bottom:1px solid white;">
+            <div class="footer-img">
+              <img src="./images/8.jpg" class="shadow rounded-circle" height="80" width="80" alt="">
+              <span>important links</span>
+            </div>
+          </div>
+          <ul class="py-4">
+            <li><a class="text-dark" href="#">visit us</a></li>
+            <li><a class="text-dark" href="#">take alook</a></li>
+            <li><a class="text-dark" href="#">your health is more important</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-11 mx-auto">
+          <div class="py-3 mx-auto" style="border-top:1px solid white;border-bottom:1px solid white;">
+            <div class="footer-img">
+              <img src="./images/8.jpg" class="shadow rounded-circle" height="80" width="80" alt="">
+              <span>vision</span>
+            </div>
+          </div>
+          <ul class="py-4">
+            <li><a class="text-white-50" href="#">serveices for all</a></li>
+            <li><a class="text-white-50" href="#">provid best serveices</a></li>
+            <li><a class="text-white-50" href="#">you will be better than before</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="text-uppercase py-4 text-primary fw-bold fs-5" style="border-top:1px solid white;border-bottom:1px solid white;">copyright &copy; 2024 omar elsayed. good company. all rights</p>
+    </div>
+    
+    
+  
+  
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/all.min.js"></script>
+</body>
+
+</html> 

@@ -1,0 +1,132 @@
+:root {
+    --primary: #0d6efd;
+}
+body {
+    text-transform: capitalize;
+        
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.alert-color {
+    background-color: #9ac2fd;
+}
+/* ///////////////////////////////////////////// */
+.navbar {
+    z-index: 1055;
+}
+.navbar-brand {
+    border-right: 1px solid #0d6efd;
+}
+.dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.559);
+}
+.dropdown-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.108);
+    color: var(--primary);
+}
+.dropdown-menu a {
+    color: #0d6dfdad;
+}
+/* ////////////////////////////////////////////// */
+.ul-icon {
+    right: 4%;
+    top: 27%;
+    z-index: 1000;
+}
+.position-fixed li a:hover svg {
+    color: #0d6dfdc3;    
+}
+/* /////////////////////////////////////////////// */
+.carousel .carousel-caption {
+    background-color: rgba(255, 255, 255, 0.154) !important;
+}
+.carousel img {
+    height: calc(100vh - 65.97px)  !important;
+}
+/* //////////////////////////////////////////////// */
+.fade.show {
+    background-color: rgba(0, 0, 0, 0.178) !important;
+}
+.modal-p {
+    direction: rtl;
+}
+.modal-button span {
+    visibility: hidden;
+    bottom: -28px;
+    right: -78px;
+    z-index: 1;
+    font-size: 13px;
+    border-top-right-radius: 5px;
+    background-color: rgba(7, 7, 7, 0.354) !important;
+}
+.modal-button:hover span {
+    visibility: visible !important;
+}
+/* //////////////////////////////////////////////// */
+.background-img , .background-img1 {
+    background-image: url(../images/5.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50%;
+}
+/* ////////////////////////////////////////////// */
+.card-body .btn {
+    top: 30%;
+}
+.background-img1 {
+    background-image: url(../images/8.jpg);
+}
+.container .row .col-card {
+    position: relative;
+    border-radius: 5%;
+}
+.container .row .col-card::after {
+    content: "";
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 0%;
+    transition: .5s;
+}
+.container .row .col-card:hover::after {
+    background-color: rgba(73, 73, 255, 0.312);
+    width: 100%;
+    height: 100%;
+}
+.container .row .col-card::before {
+    content: "";
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    height: 0%;
+    transition: .5s;
+    z-index: 2;
+}
+.container .row .col-card:hover::before {
+    background-color: rgba(73, 73, 255, 0.312);
+    width: 100%;
+    height: 100%;
+}
+/* ////////////////////////////////////////////// */
+.container .ul-ux {
+    transition: .5s;
+}
+.container .ul-ux:hover {
+    transform: scale(.9,.9);
+}
+/* ////////////////////////////////////////////// */
+.cont .span-line {
+    transition: 1s;
+    width: 100px !important;
+}
+.cont:hover .span-line {
+    width: 150px !important;
+}
